@@ -126,7 +126,9 @@ header{
 .header_image{
   position: relative;
   isolation: isolate;
+
 }
+
 .header_image::before{
   position: absolute;
   content: "";
@@ -154,9 +156,28 @@ header{
 .header_content h1 span{
   color: var(--primary-color);
 }
+p{
+  text-align: center;
+  padding-bottom: 10px;
+}
+h1{
+  text-align: center;
+}
+.about_image{
+  position: absolute;
+  content: "";
+  height: 40%;
+  aspect-ratio: 1;
+  background-color: var(--primary-color);
+  border-radius: 100%;
+  z-index: -1;
+  position-area: bottom;
+ 
+}
 
-@media (width > 768px){
 
+
+@media(width > 768px){
   nav{
     position: static;
     padding: 2rem 1rem;
